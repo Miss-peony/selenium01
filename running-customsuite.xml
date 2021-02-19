@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="methods">
+  <test name="selenium01">
+    <classes>
+      <class name="selenium.day01.MouseExsersise">
+        <methods>
+          <include name="moveToElement"/>
+        </methods>
+      </class> <!-- selenium.day01.LocationExercise -->
+      <class name="selenium.day01.SmallWindow">
+        <methods>
+          <include name="alert"/>
+        </methods>
+      </class>
+    </classes>
+  </test> <!-- selenium01 -->
+</suite> <!-- Default Suite -->
