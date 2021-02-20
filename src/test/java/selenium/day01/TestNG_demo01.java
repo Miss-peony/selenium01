@@ -45,10 +45,8 @@ public class TestNG_demo01 {
             System.out.println("这是第一个"+url);
         }else if(url.equals("http2")){
             System.out.println("这是第二个"+url);
-        }else if(url.equals("http3")){
-            System.out.println("这是第三个"+url);
         }else
-            System.out.println("出错了");
+            System.out.println("这是第三个"+url);
 
     }
 

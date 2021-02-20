@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" >
+  <test name="selenium01">
+    <classes>
+      <class name="selenium.day01.TestNG_demo01">
+      </class>
+    </classes>
+  </test> <!-- selenium01 -->
+</suite> <!-- Default Suite -->
