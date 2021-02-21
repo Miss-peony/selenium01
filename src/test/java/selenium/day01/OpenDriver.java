@@ -22,19 +22,23 @@ public class OpenDriver {
     @Test
     public void openFireFox() {
         System.setProperty("webdriver.gecko.driver", "E:\\IdeaProjects\\selenium01\\drivers\\geckodriver.exe");
-        WebDriver firefoxDriver = new FirefoxDriver();
-        firefoxDriver.get("https://www.baidu.com/");
+        WebDriver driver=new FirefoxDriver();
+        driver.get("https://www.baidu.com/");
+        driver.quit();
     }
     @Test
     public void openIE() {
         System.setProperty("webdriver.ie.driver", "E:\\IdeaProjects\\selenium01\\drivers\\IEDriverServer.exe");
         WebDriver ieDriver = new InternetExplorerDriver();
         ieDriver.get("https://www.baidu.com/");
+        ieDriver.quit();
     }
     @Test
     public void openEdge() {
         System.setProperty("webdriver.edge.driver", "E:\\IdeaProjects\\selenium01\\drivers\\msedgedriver.exe");
         WebDriver edgeDriver = new EdgeDriver();
+        edgeDriver.get("https://www.baidu.com/");
+        edgeDriver.quit();
 
     }
     @Test
@@ -49,4 +53,6 @@ public class OpenDriver {
         actions.dragAndDrop(square1,target);
         Thread.sleep(5000);
     }
+
+
 }

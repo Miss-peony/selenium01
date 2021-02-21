@@ -12,7 +12,7 @@ public class GridTest {
     public void chromeTest() throws MalformedURLException, InterruptedException {
 //        DesiredCapabilities dc=DesiredCapabilities.chrome();
         DesiredCapabilities dc= DesiredCapabilities.internetExplorer();
-        WebDriver driver =new RemoteWebDriver(new URL("http://10.20.48.155:19767/wd/hub"),dc);
+        WebDriver driver =new RemoteWebDriver(new URL("http://10.20.48.155:4444/wd/hub"),dc);
         driver.get("http://www.baidu.com");
         Thread.sleep(5000);
         driver.quit();

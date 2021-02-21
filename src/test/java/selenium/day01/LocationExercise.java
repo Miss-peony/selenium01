@@ -1,14 +1,12 @@
 package selenium.day01;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.IOException;
 
 public class LocationExercise {
     WebDriver driver;  //相当于int a,给一个全局变量
@@ -124,17 +122,6 @@ public class LocationExercise {
         Assert.assertFalse(b);
     }
 
-    //截图
-    @Test
-    public void shotTest(){
-        driver.get("file:///E:/selenium_html/index.html");
-        File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(file,new File("D:/test.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     @AfterMethod
     public void closeDriver(){
