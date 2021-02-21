@@ -3,7 +3,7 @@
 <suite name="Default Suite" >
   <test name="selenium01">
     <classes>
-      <class name="selenium.day01.FireFoxDriverOpen">
+      <class name="selenium.day01.AssertExercise">
       </class>
     </classes>
   </test> <!-- selenium01 -->
