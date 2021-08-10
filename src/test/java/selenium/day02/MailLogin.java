@@ -70,7 +70,7 @@ public class MailLogin {
                           /* 登录 */
     @Test
     public void accountLogin() throws InterruptedException {
-        MailLogin.login(driver,"h15210710913","icloudHmj123");
+        MailLogin.login(driver,"h15210710913","icloud123");
 
         Thread.sleep(3000);
         String handle1= driver.getWindowHandle();
